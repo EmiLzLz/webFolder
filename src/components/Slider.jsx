@@ -105,7 +105,7 @@ function Slider({ darkMode }) {
           <Icon icon="grommet-icons:caret-next" style={{ fontSize: "35px" }} />
         </button>
         <audio ref={audioRef}>
-          <source src="src/assets/slider_sound.wav" type="audio/mpeg" />
+          <source src="/audio/slider_sound.wav" type="audio/mpeg" />
         </audio>
       </div>
     </>
