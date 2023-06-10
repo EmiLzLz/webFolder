@@ -35,7 +35,7 @@ export const projectsData = [
     image: appImg4,
     description:
       "React was used to create this web folder, and Tailwind CSS was used to style it. The view button will take you to a public album where i put captures of the figma file where i created the light and dark view of the project. I discovered how to create a form with validations to display mistakes and a response once the form is submitted using this project. I handled these states using a unique hook that I created to accomplish this. Additionally, I used states to create the slider, the page theme change button, and the top-scrolling window button.",
-    code: "",
+    code: "https://github.com/EmiLzLz/webFolder",
     view: "https://www.figma.com/invites/claim/QhFBzSgryrj8sq2ahrLdIz6ITOtzXaZR2d3p1K3fLpNo",
   },
 ];
