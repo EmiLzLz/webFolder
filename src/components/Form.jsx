@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext }  from "react";
 import { Icon } from "@iconify/react";
 import useForm from "../hooks/useForm";
+import ThemeContext from "../context/ThemeContext";
 
 /* `const initialForm` is an object that initializes the form fields with empty strings. It is used as
 the initial state for the form in the `useForm` hook. */

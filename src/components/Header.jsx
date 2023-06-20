@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext }  from "react";
 import { Icon } from "@iconify/react";
+import ThemeContext from "../context/ThemeContext";
 
 //*Dentro del label van los iconos
 function Header() {

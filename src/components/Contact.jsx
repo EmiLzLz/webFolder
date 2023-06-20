@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext }  from "react";
 import imgFormDark from "../assets/darkBackground.jpg";
 import imgForm from "../assets/lightBackground.jpg";
+import ThemeContext from "../context/ThemeContext";
 import Form from "./Form";
 
 

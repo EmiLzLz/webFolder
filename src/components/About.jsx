@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext }  from "react";
 import mainImg from "../assets/main image.jpg";
 import mainImgDark from "../assets/mainImageDM.png";
+import ThemeContext from "../context/ThemeContext";
 import { Icon } from "@iconify/react";
 
 function About() {

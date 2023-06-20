@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { projectsData } from "../helpers/projectsData";
 import { Icon } from "@iconify/react";
+import ThemeContext from "../context/ThemeContext";
 
 function Slider() {
   const { darkMode } = useContext(ThemeContext);

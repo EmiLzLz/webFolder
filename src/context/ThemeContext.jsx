@@ -11,7 +11,7 @@ const ThemeProvider = ({ children }) => {
 
   const data = { darkMode, toggleDarkMode };
   
-  return <ThemeProvider value={data}>{children}</ThemeProvider>;
+  return <ThemeContext.Provider value={data}>{children}</ThemeContext.Provider>;
 };
 
 export { ThemeProvider };

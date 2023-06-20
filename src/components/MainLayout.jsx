@@ -1,4 +1,4 @@
-import React  from "react";
+import React, { useContext }  from "react";
 import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -6,6 +6,7 @@ import Header from "./Header";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import ScrollBtn from "./ScrollBtn";
+import ThemeContext from "../context/ThemeContext";
 
 function MainLayout() {
 
