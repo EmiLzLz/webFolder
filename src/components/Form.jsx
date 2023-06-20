@@ -52,7 +52,9 @@ const validationsForm = (form) => {
   return errors;
 };
 
-function Form({ darkMode }) {
+function Form() {
+  const { darkMode } = useContext(ThemeContext);
+
   const { form, errors, response, handleChange, handleBlur, handleSubmit } =
     useForm(initialForm, validationsForm);
 

@@ -1,9 +1,11 @@
 import React from "react";
 import mainImg from "../assets/main image.jpg";
-import mainImgDark from "../assets/mainImageDM.png"
+import mainImgDark from "../assets/mainImageDM.png";
 import { Icon } from "@iconify/react";
 
-function About({ darkMode }) {
+function About() {
+  const { darkMode } = useContext(ThemeContext);
+
   return (
     <section className="about px-2 md:px-0  py-24 container mx-auto grid grid-cols-1 md:grid-cols-2 overflow-hidden">
       <article className="left-side w-full">
@@ -16,7 +18,10 @@ function About({ darkMode }) {
             text-xl md:text-2xl pb-2 text-center md:text-left
             ${darkMode && "dm-text-white"}`}
           >
-            Front end developer is what I do. With the purpose of developing more sophisticated projects, I wish to develop and learn more about the technologies I already know and those I don't. You can find some of the projects I've made in this web folder.
+            Front end developer is what I do. With the purpose of developing
+            more sophisticated projects, I wish to develop and learn more about
+            the technologies I already know and those I don't. You can find some
+            of the projects I've made in this web folder.
           </p>
           <div className="social-links pt-6 md:p-3 w-full flex justify-center md:justify-start gap-6">
             <a
@@ -44,17 +49,19 @@ function About({ darkMode }) {
       </article>
       <div className="right-side w-full">
         <div className="container-img w-full md:w-4/5 h-4/5 md:h-auto mx-auto ">
-          {
-            darkMode ? <img
-            className="aspect-square object-cover w-full h-full"
-            src={mainImgDark}
-            alt="main image"
-          /> : <img
-          className="aspect-square object-cover w-full h-full"
-          src={mainImg}
-          alt="main image"
-        />
-          }
+          {darkMode ? (
+            <img
+              className="aspect-square object-cover w-full h-full"
+              src={mainImgDark}
+              alt="main image"
+            />
+          ) : (
+            <img
+              className="aspect-square object-cover w-full h-full"
+              src={mainImg}
+              alt="main image"
+            />
+          )}
         </div>
       </div>
     </section>

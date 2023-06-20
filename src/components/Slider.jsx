@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { projectsData } from "../helpers/projectsData";
 import { Icon } from "@iconify/react";
 
-function Slider({ darkMode }) {
+function Slider() {
+  const { darkMode } = useContext(ThemeContext);
+
   const [slider, setSlider] = useState(0);
+  
   /* `const audioRef = React.createRef();` is creating a reference to an HTML audio element that is
   used to play a sound effect when the slider changes to the next or previous project. The reference
   is created using the `createRef()` method from the React library. This allows the audio element to

@@ -2,7 +2,9 @@ import React from "react";
 import { Icon } from "@iconify/react";
 
 //*Dentro del label van los iconos
-function Header({ toggleDarkMode, darkMode }) {
+function Header() {
+  const { darkMode, toggleDarkMode } = useContext(ThemeContext);
+  
   return (
     <header className="container mx-auto py-5 px-2 md:px-0">
       <nav className="w-full flex items-center justify-between">

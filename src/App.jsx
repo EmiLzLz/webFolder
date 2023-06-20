@@ -1,10 +1,13 @@
 import react from "react";
 import MainLayout from "./components/MainLayout";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   return (
     <div className="App ">
-      <MainLayout />
+      <ThemeProvider>
+        <MainLayout />
+      </ThemeProvider>
     </div>
   );
 }

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 
-function ScrollBtn({darkMode}) {
+function ScrollBtn() {
+  const { darkMode } = useContext(ThemeContext);
   const [visible, setVisible] = useState(false);
 
   /**
