@@ -28,6 +28,7 @@ export const projectsData = [
     image: appImg3,
     description:
       "a React project that gives users access to data on a variety of series, such as summaries, statuses, ratings, networks, and more. With this project, I gained knowledge of states, conditional rendering, props, and the use of an api in React with a helper to send HTTP requests using an endpoint and options for GET, POST, PUT, or DELETE methods.",
+    code: "https://github.com/EmiLzLz/seriesSearcher",
     view: "https://emilzlz.github.io/seriesSearcher/",
   },
   {
