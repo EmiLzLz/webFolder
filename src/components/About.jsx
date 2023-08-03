@@ -11,18 +11,16 @@ function About() {
     <section className="about px-2 md:px-0  py-24 container mx-auto grid grid-cols-1 md:grid-cols-2 overflow-hidden">
       <article className="left-side w-full">
         <div className="main-info w-full h-full flex flex-col items-center justify-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl pb-6 md:pb-2 text-center md:text-left">
-            FRONTEND DEVELOPER
+          <h1 className="text-4xl md:text-6xl lg:text-7xl pb-6 md:pb-2 text-center md:text-left w-full">
+            WEB DEVELOPER
           </h1>
           <p
             className={`
-            text-xl md:text-2xl pb-2 text-center md:text-left
+            text-xl md:text-2xl pb-8 text-center md:text-left
             ${darkMode && "dm-text-white"}`}
           >
-            Front end developer is what I do. With the purpose of developing
-            more sophisticated projects, I wish to develop and learn more about
-            the technologies I already know and those I don't. You can find some
-            of the projects I've made in this web folder.
+            Being a web developer, I have a strong interest in all things pertaining to the creation of websites and online applications. from the logic and code employed to the UX/UI design process.
+            In a similar vein, I always strive to learn something new from the branches of science and technology that I find interesting.
           </p>
           <div className="social-links pt-6 md:p-3 w-full flex justify-center md:justify-start gap-6">
             <a
